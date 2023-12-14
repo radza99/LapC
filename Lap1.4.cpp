@@ -1,10 +1,10 @@
 #include <stdio.h>
 int GetSet( int data[] ) {
   int i, n;
-  printf( "ป้อนจำนวนสมาชิกของเซต: " );
+  printf( "Setnum: " );
   scanf( "%d", &n );
   for ( i = 0; i < n; i++ ) {
-    printf( "ป้อนค่าสมาชิกที่ %d: ", i + 1 );
+    printf( "set %d: ", i + 1 );
     scanf( "%d", &data[i] );
   }
   return n;
@@ -12,9 +12,9 @@ int GetSet( int data[] ) {
 int main() {
   int *data, num,i;
   num = GetSet( data );
-  printf( "จำนวนสมาชิกของเซต: %d\n", num );
+  printf( "Number: %d\n", num );
   for ( i = 0; i < num; i++ ) {
-    printf( "สมาชิกที่ :%d",  data[i] );
+    printf( "Member :%d",  data[i] );
   }
 
   return 0;
