@@ -12,9 +12,9 @@ int GetSet( int data[] ) {
 int main() {
   int *data, num,i;
   num = GetSet( data );
-  printf( "Number: %d\n", num );
+  printf( "Member: %d\n", num );
   for ( i = 0; i < num; i++ ) {
-    printf( "Member :%d",  data[i] );
+    printf( "Number :%d",  data[i] );
   }
 
   return 0;
